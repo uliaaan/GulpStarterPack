@@ -1,12 +1,17 @@
-<h1>GulpStarterPack - pug, sass, browsersync, php</h1>
+# GulpStarterPack
 
-<h2>Pack inclide:</h2>
+### Starter pack for web dev
 
-<ul>
-	<li>PUG</li>
-  <li>SASS</li>
-  <li>PHP</li>
-  <li>BROWSERSYNC</li>
-</ul>
+##Pack inclide:</h2>
+- PUG
+- SASS
+- PHP
+- BROWSERSYNC
 
-<p>Install OpenServer, clone this repo, install, change proxy in package.json and go!</p>
+Install any server (Openserver, Appserv...)
+
+<pre>
+git clone https://github.com/uliaaan/GulpStarterPack
+npm install
+gulp
+</pre>

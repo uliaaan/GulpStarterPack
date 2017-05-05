@@ -78,6 +78,7 @@ gulp.task('watch', ['sass', 'pug', 'js', 'browser-sync'], function() {
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/**/*.php', browserSync.reload);
+	gulp.watch('app/templates/**/*.php', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
@@ -91,6 +92,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'pug', 'js'], function() {
 	var buildFiles = gulp.src([
 		'app/*.html',
 		'app/**/*.php',
+		'app/templates/**/*.php',
 		'app/pug/**/*.pug',
 		'app/.htaccess',
 		]).pipe(gulp.dest('dist'));
